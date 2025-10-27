@@ -4,7 +4,8 @@ pipeline{
         stage("Build Docker image"){
             steps{
                 echo "Build Docker image"
-                bat "docker build -t kubdemoapp:v1 ."
+                bat "docker build -t exam1242:v1
+ ."
             }
         }
         stage("Docker Login"){
@@ -15,8 +16,8 @@ pipeline{
         stage("push Docker image to docker hub"){
             steps{
                 echo "push Docker image to docker hub"
-                bat "docker tag kubdemoapp:v1 samrithi/exam1242:t2"
-                bat "docker push samrithi/exam1242"
+                bat "docker tag kubdemoapp:v1 samrithi/exam1242:v1"
+                bat "docker push samrithi/exam1242:v1"
             }
         }
         stage("Deploy to kubernetes"){
@@ -37,4 +38,5 @@ pipeline{
     }
 
 }
+
 
