@@ -35,4 +35,5 @@ pipeline{
             echo "pipeline failed.Please check the logs"
         }
     }
+
 }
