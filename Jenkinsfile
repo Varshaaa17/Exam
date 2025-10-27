@@ -15,8 +15,8 @@ pipeline{
         stage("push Docker image to docker hub"){
             steps{
                 echo "push Docker image to docker hub"
-                bat "docker tag kubdemoapp:v1 samrithi/week9kubernetes:t2"
-                bat "docker push samrithi/week9kubernetes"
+                bat "docker tag kubdemoapp:v1 samrithi/exam1242:t2"
+                bat "docker push samrithi/exam1242"
             }
         }
         stage("Deploy to kubernetes"){
@@ -37,3 +37,4 @@ pipeline{
     }
 
 }
+
