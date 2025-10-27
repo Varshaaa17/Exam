@@ -4,8 +4,7 @@ pipeline{
         stage("Build Docker image"){
             steps{
                 echo "Build Docker image"
-                bat "docker build -t exam1242:v1
- ."
+                bat "docker build -t exam1242:v1"
             }
         }
         stage("Docker Login"){
@@ -38,5 +37,6 @@ pipeline{
     }
 
 }
+
 
 
