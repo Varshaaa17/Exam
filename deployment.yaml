@@ -14,7 +14,8 @@ spec:
     spec:
       containers:
       - name: kubedemoapp
-        image: samrithi/exam1242:t2
+        image: samrithi/exam1242:t1
         ports:
 
           - containerPort: 5000
+
